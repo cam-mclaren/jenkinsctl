@@ -1,4 +1,5 @@
 jenkinsctl
+jenkinsctl_debug
 *.swp
 *.exe
 jenkinsctl_linux_amd64
