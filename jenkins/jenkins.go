@@ -373,6 +373,7 @@ func (j *Jenkins) GetLastBuild(jobName string) error {
 		fmt.Printf("✅ Last build Number: %d\n", build.Job.Raw.LastBuild.Number)
 		fmt.Printf("✅ Last build URL: %s\n", build.Job.Raw.LastBuild.URL)
 		fmt.Printf("✅ Parameters: %s\n", build.GetParameters())
+		fmt.Printf("✅ IsRunning: %v\n", build.IsRunning(j.Context))
 		fmt.Printf("✅ Result: %s\n", build.GetResult())
 	} else {
 		fmt.Printf("No last build available for job: %s", jobName)

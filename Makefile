@@ -15,6 +15,7 @@ darwin: $(DARWIN) ## Build for Darwin (macOS)
 
 debug: $(DEBUG_EXECUTABLE) ## Build with debugging symbols
 
+.PHONY: $(DEBUG_EXECUTABLE)
 $(DEBUG_EXECUTABLE):
 	rm -f $(DEBUG_EXECUTABLE)
 	go build -v -gcflags="all=-N -l" -o $(DEBUG_EXECUTABLE) $(SOURCE_GO)
@@ -35,9 +36,12 @@ $(DARWIN):
 
 clean:
 	rm -f $(BIN_ALL_PLATFORMS)
+
+prod_clean:
+	rm -f $(BIN_ALL_PLATFORMS)
 	go clean --modcache
 
-dev: clean debug
+dev: debug
 	@echo version: $(VERSION)
 
 # Work file is used for local development. Remove it before building for production.
@@ -51,5 +55,8 @@ check_go_work:
 # - need to publish dependacy verision
 # -  mv work file,
 # - use go get to fetch published version (go get github.com/cam-mclaren/jenkinsctl/jenkins@jenkins/v0.0.1) and update the mod file, run go mod tidy. 
-prod: check_go_work clean windows linux darwin  ## Build binaries
+prod: check_go_work prod_clean windows linux darwin  ## Build binaries
 	@echo version: $(VERSION)
+
+install: check_go_work prod_clean
+	env GOOS=linux GOARCH=amd64 go install ./jenkinsctl.go

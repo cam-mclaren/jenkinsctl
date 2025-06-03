@@ -7,3 +7,4 @@ jenkinsctl_darwin_amd64
 go.work
 go.work.local
 go.work.sum
+delve_cmds.txt
