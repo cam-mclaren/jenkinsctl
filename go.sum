@@ -1,7 +1,7 @@
 github.com/bndr/gojenkins v1.1.0 h1:TWyJI6ST1qDAfH33DQb3G4mD8KkrBfyfSUoZBHQAvPI=
 github.com/bndr/gojenkins v1.1.0/go.mod h1:QeskxN9F/Csz0XV/01IC8y37CapKKWvOHa0UHLLX1fM=
-github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250515092507-c1a902ef855a h1:90O1j2P/mcDn9Dux73XgMy1TlkB3kH4Jxfmfb70Z7nw=
-github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250515092507-c1a902ef855a/go.mod h1:9BcYKANcvXlpus/aF9qMC+ztIybIkYpXRMESJH10YN8=
+github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250603011539-3c992b4f8811 h1:B8Mejnp6hSOmFik9GUEwsx2WcEydTtN34oDYHDZrRvU=
+github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250603011539-3c992b4f8811/go.mod h1:9BcYKANcvXlpus/aF9qMC+ztIybIkYpXRMESJH10YN8=
 github.com/cpuguy83/go-md2man/v2 v2.0.6/go.mod h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6NIQQ7OS05n1F4g=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
