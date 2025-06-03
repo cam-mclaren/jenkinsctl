@@ -312,6 +312,7 @@ func (j *Jenkins) GetLastUnstableBuild(jobName string) error {
 		fmt.Printf("Last unstable build Number: %d\n", build.Job.Raw.LastBuild.Number)
 		fmt.Printf("Last unstable build URL: %s\n", build.Job.Raw.LastBuild.URL)
 		fmt.Printf("Parameters: %s\n", build.GetParameters())
+		fmt.Printf("Result: %s\n", build.GetResult())
 	} else {
 		fmt.Printf("No last unstable build available for job: %s", jobName)
 	}
