@@ -1,6 +1,9 @@
 jenkinsctl
 jenkinsctl_debug
-*.swp
-*.exe
 jenkinsctl_linux_amd64
 jenkinsctl_darwin_amd64
+*.swp
+*.exe
+go.work
+go.work.local
+go.work.sum

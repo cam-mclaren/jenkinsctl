@@ -3,7 +3,7 @@ module github.com/cam-mclaren/jenkinsctl
 go 1.24.3
 
 require (
-	github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250603011539-3c992b4f8811
+	github.com/cam-mclaren/jenkinsctl/jenkins v1.0.0
 	github.com/spf13/cobra v1.9.1
 )
 
