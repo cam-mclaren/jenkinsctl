@@ -17,6 +17,7 @@ debug: $(DEBUG_EXECUTABLE) ## Build with debugging symbols
 
 .PHONY: $(DEBUG_EXECUTABLE)
 $(DEBUG_EXECUTABLE):
+	go work edit -use=./jenkins
 	rm -f $(DEBUG_EXECUTABLE)
 	go build -v -gcflags="all=-N -l" -o $(DEBUG_EXECUTABLE) $(SOURCE_GO)
 
@@ -46,17 +47,13 @@ dev: debug
 
 # Work file is used for local development. Remove it before building for production.
 check_go_work:
-	@if [ -f go.work ]; then \
-		echo "go.work file found, please remove it"; \
-		exit 1; \
-	fi
+	go work edit -dropuse=./jenkins
 
 # Pre-requisites: 
 # - need to publish dependacy verision
-# -  mv work file,
 # - use go get to fetch published version (go get github.com/cam-mclaren/jenkinsctl/jenkins@jenkins/v0.0.1) and update the mod file, run go mod tidy. 
 prod: check_go_work prod_clean windows linux darwin  ## Build binaries
 	@echo version: $(VERSION)
 
 install: check_go_work prod_clean
-	env GOOS=linux GOARCH=amd64 go install ./jenkinsctl.go
+	env GOBIN=~/.local/go/bin GOOS=linux GOARCH=amd64 go install ./jenkinsctl.go

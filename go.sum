@@ -1,9 +1,5 @@
 github.com/bndr/gojenkins v1.1.0 h1:TWyJI6ST1qDAfH33DQb3G4mD8KkrBfyfSUoZBHQAvPI=
 github.com/bndr/gojenkins v1.1.0/go.mod h1:QeskxN9F/Csz0XV/01IC8y37CapKKWvOHa0UHLLX1fM=
-github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250603013648-ce6e9fbef8a2 h1:5R5v83q4y9m0uBfz1g8NvDmiVWSjOSm6IbQxyJjCG/0=
-github.com/cam-mclaren/jenkinsctl/jenkins v0.0.0-20250603013648-ce6e9fbef8a2/go.mod h1:9BcYKANcvXlpus/aF9qMC+ztIybIkYpXRMESJH10YN8=
-github.com/cam-mclaren/jenkinsctl/jenkins v1.0.0 h1:eh6fVavCJRjzVIKWLEX+F2VhIc7zAKAWzZHOIBPlhFg=
-github.com/cam-mclaren/jenkinsctl/jenkins v1.0.0/go.mod h1:9BcYKANcvXlpus/aF9qMC+ztIybIkYpXRMESJH10YN8=
 github.com/cam-mclaren/jenkinsctl/jenkins v1.0.1 h1:6WND5J7z6fkLWyXL2XwVJvQbk2UgSBIjzKo/Py0ozUM=
 github.com/cam-mclaren/jenkinsctl/jenkins v1.0.1/go.mod h1:9BcYKANcvXlpus/aF9qMC+ztIybIkYpXRMESJH10YN8=
 github.com/cpuguy83/go-md2man/v2 v2.0.6/go.mod h1:oOW0eioCTA6cOiMLiUPZOpcVxMig6NIQQ7OS05n1F4g=
